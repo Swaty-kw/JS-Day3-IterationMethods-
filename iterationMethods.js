@@ -8,7 +8,7 @@ Q1) Create a new array containing numbers that are greater than or equal to 25.
 Q2) Create a new array containing numbers that are divisible by 5.
 ******************************************************************/
 
-/*let numbersBiggerThan25 = numbers.filter((number) => {
+let numbersBiggerThan25 = numbers.filter((number) => {
   if (number >= 15) {
     return true;
   } else {
@@ -23,6 +23,7 @@ const numbersdevivedby5 = numbers.filter((number) => {
     false;
   }
 });
+
 console.log(numbersBiggerThan25);
 console.log(numbersdevivedby5);
 
@@ -33,29 +34,34 @@ let numberx2 = numbers.map((number) => {
   return n ** 2;
 });
 console.log(numSquare);
-console.log(numberx2); */
+console.log(numberx2);
 
 let sum1 = numbers.filter((number) => {
   if (number >= 20) {
     return true;
   } else {
-     false;
+    return false;
   }
 });
-let squaredNumbers = numbers.map((number) => {
+let squaredNumbers = sum1.map((number) => {
   return number * number;
 });
-//console.log(sum1);
-//console.log(squaredNumbers);
+
+console.log(sum1);
+console.log(squaredNumbers);
 
 let devi5 = numbers.filter((number) => {
-  if (number % 5 == 0);{
-    return true  
-  } else {false;}
-    
-  
-  
-  
-    
-  
-}); console.log(devi5)
+  if (number % 5 == 0) {
+    return true;
+  } else {
+    return false;
+  }
+});
+
+let multiby3 = devi5.map((number) => {
+  number * 3;
+
+  console.log(devi5);
+  console.log(multiby3);
+});
+console.log(devi5);
