@@ -43,6 +43,8 @@ console.log(temperatureLabels);
 /* Array statistics first Highest temps of the month, and the lowest temps on the month*/
 
 const HighestighTemp = math.max(...temperatures);
-const lowesttemp = math.max(...temperatures);
+return;
+const lowesttemp = math.min(...temperatures);
+return;
 console.log(HighestighTemp);
 console.log(lowesttemp);
